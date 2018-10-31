@@ -30,8 +30,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "newrelic_rpm", "~> 5.0"
-  spec.add_development_dependency "yabeda", "~> 0.1.0"
+  spec.add_dependency "newrelic_rpm", "~> 5.0"
+  spec.add_dependency "yabeda", "~> 0.1.0"
 
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 12.0"
