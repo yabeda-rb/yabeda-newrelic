@@ -3,7 +3,10 @@ require:
 - rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
 
 Metrics/BlockLength:
   Exclude:
@@ -12,9 +15,6 @@ Metrics/BlockLength:
 
 Metrics/LineLength:
   Max: 120
-
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
