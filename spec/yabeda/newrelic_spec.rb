@@ -18,7 +18,7 @@ RSpec.describe Yabeda::NewRelic do
     end
 
     it "calls increment_metric on counter increment" do
-      Yabeda.gate_opens.increment(gate: :fake)
+      Yabeda.gate_opens.increment({ gate: :fake })
       expect(NewRelic::Agent).to have_received(:increment_metric).with("Custom/gate_opens/fake", 1)
     end
 
